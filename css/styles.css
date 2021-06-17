@@ -1,4 +1,35 @@
 :root {
+  --color-text: #170C04;
+  --color-link: #E27B3A;
+  --color-form-bg: #2E96FF;
+  --color-white: #fff;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+      url('../fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+      url('../fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 /* GENERAL */
@@ -43,9 +74,85 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 900px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1180px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+
+
+/* best-product */
+
+.best-product{
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.best-product__item{
+  list-style: none;
+  width: 360px;
+  padding: 40px 31px 18px 31px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  position: relative;
+}
+
+.best-product__item::before{
+  content: '';
+  position: absolute;
+  width: 63px;
+  height: 64px;
+  background-image: url("../img/best-product-bg1.svg");
+  background-repeat: no-repeat;
+  left: calc(50% - 40px);
+  top: -29px;
+}
+
+.page-two::before{
+  background-image: url("../img/pest-product-bg2.svg");
+}
+
+.page-three::before{
+  background-image: url("../img/best-product-bg3.svg");
+}
+.page-two{
+  box-shadow: 0px 1px 19px var(--color-link);
+}
+
+.best-product__heading{
+  font-family: 'Poppins';
+  font-weight: normal;
+  font-size: 25px;
+  text-align: center;
+  line-height: 37px;
+  width: 272px;
+  color: var( --color-text);
+}
+
+.best-product__text{
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  width: 298px;
+  text-align: center;
+  color: var(--color-text);
+  opacity: 0.6;
+}
+
+.details__link{
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-link);
+  display: flex;
+justify-content: center;
 }
