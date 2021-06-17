@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'Poppins';
   src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
-      url('../fonts/Poppins-Medium.woff') format('woff');
+    url('../fonts/Poppins-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -17,7 +17,7 @@
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-      url('../fonts/Roboto-Regular.woff') format('woff');
+    url('../fonts/Roboto-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 @font-face {
   font-family: 'Poppins';
   src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
-      url('../fonts/Poppins-Regular.woff') format('woff');
+    url('../fonts/Poppins-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -86,14 +86,14 @@ img {
 
 /* best-product */
 
-.best-product{
+.best-product {
   padding: 0;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
-.best-product__item{
+.best-product__item {
   list-style: none;
   width: 360px;
   padding: 40px 31px 18px 31px;
@@ -103,7 +103,7 @@ img {
   position: relative;
 }
 
-.best-product__item::before{
+.best-product__item::before {
   content: '';
   position: absolute;
   width: 63px;
@@ -114,28 +114,29 @@ img {
   top: -29px;
 }
 
-.page-two::before{
+.page-two::before {
   background-image: url("../img/pest-product-bg2.svg");
 }
 
-.page-three::before{
+.page-three::before {
   background-image: url("../img/best-product-bg3.svg");
 }
-.page-two{
+
+.page-two {
   box-shadow: 0px 1px 19px var(--color-link);
 }
 
-.best-product__heading{
+.best-product__heading {
   font-family: 'Poppins';
   font-weight: normal;
   font-size: 25px;
   text-align: center;
   line-height: 37px;
   width: 272px;
-  color: var( --color-text);
+  color: var(--color-text);
 }
 
-.best-product__text{
+.best-product__text {
   font-family: 'Roboto';
   font-weight: normal;
   font-size: 16px;
@@ -146,7 +147,7 @@ img {
   opacity: 0.6;
 }
 
-.details__link{
+.details__link {
   text-decoration: none;
   font-family: 'Roboto';
   font-weight: normal;
@@ -154,5 +155,77 @@ img {
   line-height: 24px;
   color: var(--color-link);
   display: flex;
-justify-content: center;
+  justify-content: center;
+}
+
+/* DOG-CARE */
+
+.dog-care{
+  display: flex;
+  position: relative;
+}
+
+.dog-care__contant {
+  position: absolute;
+  width: 478px;
+  left: calc(50% + 110px);
+  top: 168px;
+}
+
+.dog-care__span {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-link);
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.dog-care__heading {
+  margin: 0;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  color: var(--color-text);
+  margin-bottom: 18px;
+}
+
+.dog-care__text {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-text);
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.appointement{
+  text-decoration: none;
+  color: var(--color-white);
+  border: 2px solid var(--color-link);
+  padding: 12px 30px;
+  background: var(--color-link);
+  border-radius: 24px;
+}
+
+.see-detail{
+  margin-left: 30px;
+  background-color: var(--color-white);
+  color: var(--color-link);
+  border: 2px solid #e27a3a5b;
+  box-sizing: border-box;
+  border-radius: 24px;
+  transition: all 0.5s ease;
+}
+
+.see-detail:hover{
+  background: var(--color-link);
+  box-sizing: border-box;
+  color: var(--color-white);
+  border: 2px solid var(--color-link);
 }
